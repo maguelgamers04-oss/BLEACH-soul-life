@@ -1,0 +1,30 @@
+BLEACH: SOUL LIFE — PROJETO ANDROID
+
+O jogo original foi colocado em www/index.html. O projeto usa Capacitor para empacotar o HTML como aplicativo Android.
+
+REQUISITOS
+- Computador Windows, macOS ou Linux
+- Node.js LTS instalado
+- Android Studio instalado
+- Android SDK configurado no Android Studio
+
+GERAR O PROJETO ANDROID
+1. Extraia esta pasta no computador.
+2. Abra um terminal dentro da pasta Bleach_Soul_Life_Android.
+3. Execute: npm install
+4. Execute: npx cap add android
+5. Execute: npx cap sync android
+6. Execute: npx cap open android
+7. No Android Studio, aguarde a sincronização do Gradle.
+8. Para gerar APK de teste: Build > Build Bundle(s) / APK(s) > Build APK(s).
+9. O Android Studio mostrará o caminho do APK ao terminar.
+
+ATUALIZAR O JOGO
+- Substitua www/index.html pelo HTML atualizado.
+- Execute: npx cap sync android
+- Gere novamente o APK no Android Studio.
+
+OBSERVAÇÕES IMPORTANTES
+- O progresso atual usa localStorage do navegador/WebView e fica salvo localmente no dispositivo. Ele não sincroniza automaticamente entre celulares.
+- O painel ADM e o código que estão no HTML também podem ser vistos por alguém que inspecione o arquivo. O código no cliente não é uma proteção segura contra adulteração.
+- Este pacote contém a estrutura inicial Capacitor e o HTML do jogo. A pasta android será criada pelo comando `npx cap add android` no computador com Node/Capacitor instalados.

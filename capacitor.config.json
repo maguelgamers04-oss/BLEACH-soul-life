@@ -1,0 +1,6 @@
+{
+  "appId": "com.soullife.bleach",
+  "appName": "Bleach: Soul Life",
+  "webDir": "www",
+  "bundledWebRuntime": false
+}
